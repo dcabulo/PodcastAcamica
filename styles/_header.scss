@@ -1,0 +1,151 @@
+.header{
+    padding: 0 5%;
+    .nav{
+        background-color:white;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-top: 2%;
+        img{
+            margin-left: 5%;
+        }
+        #lista{
+            display: none;
+        }
+        label{
+            display: none;
+        }
+        ul{
+            font-family: 'IBM Plex Sans', sans-serif;
+            li{
+              padding: 14px 20px;
+              display: inline;
+              a{
+                  color:$color-font;
+              }
+              a:hover{
+                  font-size: medium;
+                  color: $color-button;
+                  text-decoration: line-through;
+              }
+            }
+        }
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        margin-left: 13.9%;
+        h1{
+            margin-top: 120px;
+            margin-bottom: 16px;
+            font-size:64px;
+            width: 100%;
+            font-weight: 300;
+            font-family:'IBM Plex Sans', sans-serif;
+            letter-spacing: 0;
+            line-height: 42px;
+            text-align: left;
+            strike{
+                text-decoration: line-through;
+            }
+            span{
+                color: $color-menu-background;
+            }
+        }
+        p{
+            font-family:'IBM Plex Mono', monospace;
+            font-size: 16px;
+            color: $color-font;
+            letter-spacing: 0;
+            line-height: 22px;
+            text-align: justify;
+            margin-bottom: 56px;
+            visibility: visible;
+            width: 628px;
+        }
+        .button{
+            width: 226px;
+            height: 56px;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            letter-spacing: 0;
+            background: $color-button;
+            font-family:'IBM Plex Mono', monospace ;
+            font-weight: bold;
+        }
+        .button:hover{
+            color: white;
+            background-image: linear-gradient(to left,$color-button-gradiente,$color-button);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        .nav {
+            width: 100%;
+            label{
+                display: inline-block;
+                padding: 2% 5%;
+            }
+            input{
+                &:checked ~ ul{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    background-color:$color-menu-background;
+                    top:40px;
+                    width: 100%;
+                }
+            }
+            ul{
+                list-style-type: none;
+                display:none;
+                li{
+                    a{
+                        color: $color-background;
+                    }
+                }
+            }
+        }
+        .title{
+            padding: 0 5%;
+            margin-left: 0;
+            h1{
+                margin-top: 29px;
+                font-size:36px;
+                width: 80%;
+                span{
+                    color: black;
+                }
+            }
+            p{
+                font-weight: 400;
+                visibility: hidden;
+                width: auto;
+                margin-bottom: 0;
+            }
+            p:before{
+                font-size: 14px;
+                content: "Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.";
+                visibility: visible;
+            }
+            .button{
+                margin: 13px 0px 24px;
+                padding: 10px 25px;
+                font-size: medium;
+                line-height: 22px;
+                width: auto;
+            }
+            .button:hover{
+                color: $color-font;
+                background-image: linear-gradient(to left,$color-button,$color-button);
+            }
+        }
+    }
+}

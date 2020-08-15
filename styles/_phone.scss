@@ -1,0 +1,65 @@
+.nosotros{
+    padding: 0 5%;
+    margin: 0;
+    .container-us{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            margin-right: 0;
+            width: 31.8%;
+            transform: translateY(-33px);
+            margin-left: 13.9%;
+        }
+        .container-us-text{
+            margin: 0;
+            padding: 0;
+            max-width: 32%;
+            margin-right: 17.8%;
+            h2{
+                width: 100%;
+                font-size: 48px;
+                margin-bottom: 24px;
+                font-family:'IBM Plex Sans', sans-serif;
+                letter-spacing: 0;
+                line-height: 42px;
+                font-weight: 100;
+            }
+            p{
+                line-height: 24px;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0;
+                font-family: 'IBM Plex Mono', monospace;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .nosotros{
+        .container-us{
+            display: flex;
+            flex-direction: column;
+            img{
+                margin: 0;
+                width: 100%;
+                transform: translateY(-55px);
+            }
+            .container-us-text{
+                margin: 10px 0 54px;
+                max-width: none;
+                h2{
+                    width: 80%;
+                    font-size:36px;
+                    margin-bottom: 8px;
+                }
+                p{
+                    line-height: 22px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

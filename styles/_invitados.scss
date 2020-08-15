@@ -1,0 +1,39 @@
+.invitados{
+    h2{
+        padding: 0;
+        font-size: 48px;
+        margin-left: 13.9%;
+        margin-bottom: 36px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-weight: 100;
+    }
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 14px 0 0;
+        img{
+            width: 33.33%;
+            height: 100%;
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .invitados{
+        h2{
+            padding: 0 5%;
+            font-size: 36px;
+            margin-bottom: 8px;
+            margin-left: 0;
+        }
+        .galeria{
+            margin: 14px 0 0;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

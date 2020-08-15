@@ -1,0 +1,52 @@
+.temas{
+    h2{
+        margin-left: 13.9%;
+        font-size: 48px;
+        margin-top: 64px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-weight: 100;
+        margin-bottom: 24px;
+    }
+    .container-icons{
+        margin: 56px 15.3% 34px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .svg-icons{
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            h3{
+                max-width: 220px;
+                margin-top: 13px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 24px;
+                color: $color-font;
+                letter-spacing: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .temas{
+        padding: 0 5%;
+        h2{
+            margin-left: 0;
+            font-size: 36px;
+            margin-top: 48px;
+        }
+        .container-icons{
+            flex-direction: column;
+            .svg-icons{
+                margin: 49px 0;
+                h3{
+                    max-width: none;
+
+                }
+            }
+        }
+    }
+}
